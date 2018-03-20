@@ -63,8 +63,9 @@
 
     <script>
         let n1 = new Negociacao(new Date(), 20, 800);
-        let volume = n1.obtemVolume();
+        let volume = n1.getVolume();
         console.log(volume);
-    </script>
+        console.log(n1.getData());
+        </script>
 </body>
 </html>
