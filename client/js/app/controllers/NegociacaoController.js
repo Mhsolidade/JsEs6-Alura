@@ -15,6 +15,8 @@ class NegociacaoController {
 
         this._listaNegociacoes.adiciona(this._criandoNegociacao());
         this._liparCampos();
+        console.log(this._listaNegociacoes.negociacoes);
+        
         
     }
     
