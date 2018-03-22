@@ -3,9 +3,9 @@ class NegociacaoController {
         
         let $ = document.querySelector.bind(document);
         
-        let inputData = $("#data");
-        let inputQuantidade = $("#quantidade");
-        let inputValor = $("#valor");
+        let _inputData = $("#data");
+        let _inputQuantidade = $("#quantidade");
+        let _inputValor = $("#valor");
 
     }
     
