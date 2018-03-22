@@ -10,8 +10,9 @@ class NegociacaoController {
         let inputQuantidade = $("#quantidade");
         let inputValor = $("#valor");
 
-        console.log(inputData);
-
+        
+        console.log(inputData.value);
+        console.log(inputQuantidade.value);
 
 
     }
