@@ -3,9 +3,9 @@ class NegociacaoController {
         
         let $ = document.querySelector.bind(document);
         
-        let _inputData = $("#data");
-        let _inputQuantidade = $("#quantidade");
-        let _inputValor = $("#valor");
+        this._inputData = $("#data");
+        this._inputQuantidade = $("#quantidade");
+        this._inputValor = $("#valor");
 
     }
     
@@ -19,13 +19,25 @@ class NegociacaoController {
         );
 
         let negociacao = new Negociacao(
-            this._inputData,
+            data,
             this._inputQuantidade,
             this._inputValor
         );
 
         console.log(negociacao);
+        this.liparCampos();
+        
+
     }
+    liparCampos() {
+
+        this._inputData.value = '';
+            this._inputQuantidade.value = 1;
+            this._inputValor.value = 0;
+
+            this._inputData.focus();
+    }
+
 
 
 }
